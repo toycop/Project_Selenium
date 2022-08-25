@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org.testng-1.0.dtd">
+
+<suite name="com.mukesh.training">
+
+	<test name="Test 1">
+		<!--  -->parameter name="browser" value="Firefox"/>
+		<classes>
+		<class name="com.application.testcases.TC_Login_Valid"/>
+	    <!-- <class name="com.application.testcases.TC_Login_Empty_Username_Valid_Password"/>
+        <class name="com.application.testcases.TC_Login_Valid_Username_Empty_Password"/>
+        <class name="com.application.testcases.TC_Login_Empty_UserName_and_Password"/>
+        <class name="com.application.testcases.TC_Login_Invalid_UserName"/>
+        <class name="com.application.testcases.TC_Login_WildCharecters_In_Username_Password"/>
+        <class name="com.application.testcases.TC_Login_Invalid_Password"/> -->
+		
+		</classes>
+
+	</test>
+	
+</suite>
