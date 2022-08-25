@@ -1,8 +1,11 @@
 package com.application.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.locators.RelativeLocator;
 
 /**
  * 
@@ -25,12 +28,11 @@ public class LoginPage
 	 * Page Object Repository
 	 */
 	
-	@FindBy(name="username") WebElement uname;
+	@FindBy(xpath="//input[@name='txtUsername']") WebElement uname;
 	
-	@FindBy(name="password") WebElement pass;
+	@FindBy(xpath="//input[@name='txtPassword']") WebElement pass;
 	
-	@FindBy(xpath="//input[@value='Login']") WebElement loginBtn;
-	
+	//@FindBy(RelativeLocator.="//input[@value='Login']") WebElement btnLogin;
 	
 	/**
 	 * login() method
@@ -43,6 +45,6 @@ public class LoginPage
 		
 		pass.sendKeys(Password);
 		
-		loginBtn.click();
+		//btnLogin.click();
 	}
 }

@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.application.pages.LoginTestCRM">
+      <class name="com.application.testcases.TC_Login_Valid">
         <methods>
           <include name="loginApp"/>
+          <include name="setUpSuite"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.application.pages.LoginTestCRM -->
+      </class> <!-- com.application.testcases.TC_Login_Valid -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
